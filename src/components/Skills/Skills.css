@@ -1,0 +1,103 @@
+.skill {
+    background-image: url('./../../assets/img/banner-bg2.gif');
+
+    padding: 0 0 50px 0;
+    position: relative;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.skill-bx {
+    background: linear-gradient(-45deg, #035741, rgba(1, 62, 72, 0.6), #090352, rgba(238, 64, 1, 0.94));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.skill h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+
+.skill-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skill-slider .item img {
+    width: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.background-image-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+}
+
+.carousel-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    margin-right: 20px;
+
+}
+
+svg {
+    width: 150px;
+}
+
+path.progress-bar-path {
+    stroke: #ec3700;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease-out;
+}
+
+text.progress-bar-text {
+    fill: #ff0a0a;
+    font-size: 24px;
+    font-weight: 600;
+    dominant-baseline: middle;
+    text-anchor: middle;
+}
+
+.carousel-progress .CircularProgressbar .CircularProgressbar-text {
+    font-size: 10px;
+    background: linear-gradient(to right, #01205b, #d91fa4);
+
+}
+
+.carousel-progress .CircularProgressbar-path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: calc(200 - (200 * var(--percentage, 0)) / 100);
+    transition: stroke-dashoffset 0.5s ease;
+}
